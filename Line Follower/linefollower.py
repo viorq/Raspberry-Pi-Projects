@@ -52,8 +52,9 @@ SPEED = 28
 sum_weights = 1
 sum_values = 1
 sensors = []
-# SETUP
 
+
+# Setup Configurations
 GPIO.setup(leftm_fwd, GPIO.OUT)
 GPIO.setup(leftm_bck, GPIO.OUT)
 GPIO.setup(left_en, GPIO.OUT)
@@ -71,6 +72,7 @@ GPIO.setup(sensor7, GPIO.IN)
 GPIO.setup(sensor8, GPIO.IN)
 time.sleep(50 / 1000.0)
 
+# Left and right pwm's
 left_pwm = GPIO.PWM(left_en, 100)
 right_pwm = GPIO.PWM(right_en, 100)
 
